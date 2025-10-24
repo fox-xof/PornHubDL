@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>PH 视频下载器</title>
+  <style>
+    /* ======= 基础布局 ======= */
+    body {
+      font-family: 'Segoe UI', 'Roboto', sans-serif;
+      width: 360px;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1e1e2f, #2b2b3d);
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* ======= 页面标题 ======= */
+    h3 {
+      margin: 0;
+      padding: 12px;
+      text-align: center;
+      background: #fea443; /* 页眉底色改为 #fea443 */
+      color: #fff;
+      letter-spacing: 0.5px;
+      font-size: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    /* ======= 表格样式 ======= */
+    table {
+      width: 90%;
+      margin: 12px auto;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 13px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      backdrop-filter: blur(6px);
+    }
+
+    th, td {
+      padding: 10px 6px;
+      text-align: center;
+    }
+
+    th {
+      background: rgba(255, 255, 255, 0.08);
+      color: #a4b1ff;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    td {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: #e8e8e8;
+    }
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.08);
+      transition: background 0.2s ease;
+    }
+
+    a {
+      color: #66d9ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      color: #80ffea;
+      text-shadow: 0 0 6px #80ffea;
+    }
+
+    #loading {
+      text-align: center;
+      color: #aaa;
+      padding: 12px 0;
+    }
+
+    #videoList {
+      text-align: center;
+      padding: 10px;
+      color: #c0c0c0;
+    }
+
+    /* ======= 页脚信息 ======= */
+    footer {
+      margin-top: auto;
+      padding: 8px 0;
+      text-align: center;
+      font-size: 11px;
+      color: #fea443; /* 页脚字体颜色改为 #fea443 */
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <h3>📥 视频下载</h3>
+  <div id="loading">正在加载视频列表...</div>
+  <div id="videoList">未检测到视频，请先打开视频页并点击扩展图标。</div>
+
+  <footer>
+    作者：Jeff Wei | 版本号：1.0
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

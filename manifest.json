@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "Pornhub 视频下载助手",
+  "version": "1.0.0",
+  "description": "点击扩展图标提取 Pornhub 视频下载链接。",
+  "icons": {
+    "16": "img/icon_16x16.png",
+    "48": "img/icon_48x48.png",
+    "128": "img/icon_128x128.png"
+  },
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "storage",
+    "downloads",
+    "cookies"
+  ],
+  "host_permissions": [
+    "*://*.pornhub.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.pornhub.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "inject.js",
+        "img/*"
+      ],
+      "matches": ["*://*.pornhub.com/*"]
+    }
+  ],
+  "action": {
+    "default_title": "点击提取视频",
+    "default_icon": {
+      "48": "img/icon_48x48.png"
+    },
+    "default_popup": "popup.html"
+  }
+}
