@@ -12,7 +12,8 @@ A Chrome extension to extract and download videos from Pornhub easily.
 
 This is a Chrome extension designed for research and learning purposes, allowing users to extract and download Pornhub videos.  
 这是一个用于研究和学习的 Chrome 扩展，可以提取并下载 Pornhub 视频。  
-<img width="577" height="535" alt="image" src="https://github.com/user-attachments/assets/abbfd3cd-c9dd-47f8-84ac-00b55e2841ee" />
+<img width="2413" height="864" alt="image" src="https://github.com/user-attachments/assets/966d7652-a029-4b31-9ce5-2fddb88032c7" />
+
 
 **Disclaimer / 免责声明**: This project is intended for educational and research use only. The author is not responsible for any commercial or illegal activities.  
 **免责声明**：本项目仅供学习和研究使用，任何商业或违法行为与作者无关。
